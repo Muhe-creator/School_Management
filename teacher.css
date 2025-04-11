@@ -1,0 +1,477 @@
+/* ========== Layout ========== */
+/* Base page container styling */
+body {
+    font-family: Arial;
+    /* System font for consistency */
+    max-width: 1200px;
+    /* Maximum content width */
+    margin: 0 auto;
+    /* Horizontal centering */
+    padding: 20px 80px;
+    /* Internal page spacing */
+}
+
+/* Primary heading styling */
+h1 {
+    text-align: center;
+    /* Center alignment */
+    margin-bottom: 30px;
+    /* Bottom spacing */
+    color: #010101;
+    /* Near-black color */
+}
+
+/* Secondary heading styling */
+h2 {
+    color: #020202;
+    /* Slightly lighter than h1 */
+    margin-bottom: 25px;
+    /* Spacing below heading */
+    padding-bottom: 10px;
+    /* Space for potential underline */
+}
+
+/* ========== Home Button ========== */
+/* Fixed position navigation button */
+.home-button {
+    position: absolute;
+    /* Fixed positioning */
+    top: 20px;
+    /* Vertical positioning */
+    right: 20px;
+    /* Horizontal positioning */
+    padding: 12px 24px;
+    /* Clickable area sizing */
+    margin-right: 60px;
+    /* Right side spacing */
+    background-color: #6c95fb;
+    /* Brand primary color */
+    color: white;
+    /* High contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Modern rounded corners */
+    z-index: 1000;
+    /* Ensure top layer visibility */
+    font-size: 16px;
+    /* Readable text size */
+}
+
+/* Interactive hover state */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade on hover */
+}
+
+/* Text display control */
+.desktop-text {
+    display: inline;
+    /* Show desktop version */
+}
+
+.mobile-text {
+    display: none;
+    /* Hide mobile version */
+}
+
+/* ========== Tables ========== */
+/* Table container styling */
+table {
+    width: 100%;
+    /* Full container width */
+    border-collapse: collapse;
+    /* Unified borders */
+    margin: 20px 0;
+    /* Vertical spacing */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    /* Subtle depth */
+}
+
+/* Table cell formatting */
+th,
+td {
+    padding: 12px;
+    /* Cell padding */
+    border: 1px solid #ddd;
+    /* Light border */
+    text-align: left;
+    /* Content alignment */
+}
+
+/* Header cell styling */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Header background */
+    font-weight: 600;
+    /* Semi-bold text */
+}
+
+/* Specific column width control */
+td:nth-child(4) {
+    min-width: 150px;
+    /* Minimum width for column 4 */
+}
+
+/* Table link styling */
+table a {
+    color: inherit;
+    /* Inherit parent color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+table a:hover {
+    text-decoration: underline;
+    /* Hover effect */
+    color: #3366cc;
+    /* Interactive color */
+}
+
+/* ========== Forms & Sections ========== */
+/* Form container styling */
+.form-section {
+    margin: 40px 0;
+    /* Vertical spacing */
+    padding: 30px;
+    /* Internal padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    background-color: #fff;
+    /* White background */
+    border: 1px solid #ddd;
+    /* Containment border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Depth effect */
+}
+
+/* Nested table spacing */
+.form-section table {
+    margin-top: 10px;
+    /* Table separation */
+}
+
+/* Form row layout */
+.form-row {
+    display: flex;
+    /* Flexbox layout */
+    gap: 30px;
+    /* Space between elements */
+    margin: 20px 0;
+    /* Vertical spacing */
+    align-items: center;
+    /* Vertical alignment */
+}
+
+/* Form element distribution */
+.form-row>* {
+    flex: 1;
+    /* Equal width distribution */
+}
+
+/* Label formatting */
+label {
+    font-weight: bold;
+    /* Emphasized text */
+    display: inline-block;
+    /* Proper spacing */
+    margin-bottom: 6px;
+    /* Space below label */
+}
+
+/* ========== Buttons ========== */
+/* Primary action button */
+.btn,
+.btn-search {
+    padding: 8px 16px;
+    /* Balanced sizing */
+    background-color: rgb(67, 122, 250);
+    /* Brand blue */
+    color: white;
+    /* Contrast text */
+    border: none;
+    /* Modern flat design */
+    border-radius: 4px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Proper sizing */
+    font-size: 14px;
+    /* Readable text */
+    cursor: pointer;
+    /* Interaction indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Hover state */
+.btn,
+.btn-search:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker blue */
+}
+
+/* Danger action button */
+.btn-cancel,
+.btn-reset {
+    margin-left: 20px;
+    /* Separation from primary */
+    padding: 8px 16px;
+    /* Matching size */
+    background-color: #dc3545;
+    /* Alert red */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Flat design */
+    border-radius: 4px;
+    /* Consistent shape */
+    font-size: 14px;
+    /* Readable size */
+    cursor: pointer;
+    /* Interaction cue */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Danger hover state */
+.btn-cancel,
+.btn-reset:hover {
+    background-color: #c82333;
+    /* Darker red */
+}
+
+.btn-reset,
+.btn-search {
+    margin-top: 10px;
+}
+
+/* ========== Text Utilities ========== */
+/* Empty state styling */
+.no-class {
+    color: #999;
+    /* Gray text */
+    font-style: italic;
+    /* Emphasis */
+}
+
+/* Interactive link styling */
+.class-link {
+    color: #1d49f5;
+    /* Brand blue */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+.class-link:hover {
+    color: #1266f7;
+    /* Lighter blue */
+    text-decoration: underline;
+    /* Hover effect */
+}
+
+/* ========== Status Messages ========== */
+/* Success message styling */
+.success {
+    color: #28a745;
+    /* Green text */
+    padding: 15px;
+    /* Internal spacing */
+    background-color: #e8f5e9;
+    /* Light green bg */
+    border-radius: 4px;
+    /* Rounded corners */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Error message styling */
+.error {
+    color: #dc3545;
+    /* Red text */
+    padding: 15px;
+    /* Internal spacing */
+    background-color: #ffebee;
+    /* Light red bg */
+    border-radius: 4px;
+    /* Rounded corners */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* ========== Chart ========== */
+/* Chart container styling */
+.chart-container {
+    width: 100%;
+    /* Responsive width */
+    max-width: 800px;
+    /* Maximum size */
+    margin: 40px auto;
+    /* Centered with spacing */
+    padding: 20px;
+    /* Internal padding */
+    background: white;
+    /* Clean background */
+    border-radius: 8px;
+    /* Soften edges */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle depth */
+}
+
+/* Chart text styling */
+.chart-bar-label {
+    font-size: 12px;
+    /* Small text */
+    fill: #666;
+    /* Gray color */
+    text-anchor: middle;
+    /* Center alignment */
+}
+
+/* Chart interaction */
+.chartjs-render-monitor:hover {
+    transform: scale(1.02);
+    /* Hover scale */
+    transition: transform 0.3s ease;
+    /* Smooth animation */
+}
+
+/* ========== Responsive ========== */
+/* Tablet breakpoint */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        /* Reduced spacing */
+    }
+
+    .home-button {
+        position: fixed;
+        /* Sticky positioning */
+        top: 10px;
+        /* Adjusted placement */
+        right: 10px;
+        /* Adjusted placement */
+        padding: 10px 0;
+        /* Compact padding */
+        font-size: 14px;
+        /* Smaller text */
+        min-width: 70px;
+        /* Minimum tap target */
+        text-align: center;
+        /* Centered text */
+        margin-top: 30px;
+        /* Top spacing */
+        margin-right: 0;
+        /* Remove desktop margin */
+    }
+
+    /* Mobile active state */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Color consistency */
+        transform: scale(0.98);
+        /* Press effect */
+    }
+
+    /* Mobile text control */
+    .desktop-text {
+        display: none;
+        /* Hide desktop text */
+    }
+
+    .mobile-text {
+        display: block;
+        /* Show mobile text */
+        font-size: 14px;
+        /* Readable size */
+        color: #fff;
+        /* Contrast color */
+    }
+
+    /* Form adjustments */
+    .form-section {
+        padding: 20px;
+        /* Reduced padding */
+        margin: 20px 0;
+        /* Adjusted spacing */
+    }
+
+    /* Stack form elements */
+    .form-row {
+        flex-direction: column;
+        /* Vertical layout */
+        gap: 15px;
+        /* Reduced spacing */
+    }
+
+    /* Full-width inputs */
+    input,
+    select {
+        max-width: 100%;
+        /* Responsive width */
+    }
+
+    /* Table adjustments */
+    table {
+        font-size: 14px;
+        /* Smaller text */
+    }
+
+    th,
+    td {
+        padding: 8px;
+        /* Compact cells */
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        /* Compact spacing */
+    }
+
+    h1 {
+        font-size: 24px;
+        /* Smaller heading */
+        margin-bottom: 20px;
+        /* Adjusted spacing */
+    }
+
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Smaller text */
+    }
+
+    button {
+        padding: 8px 16px;
+        /* Maintain click area */
+        font-size: 14px;
+        /* Readable size */
+    }
+}
+
+/* Ultra-small devices */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Minimum padding */
+        font-size: 12px;
+        /* Minimum size */
+        border-radius: 4px;
+        /* Subtle rounding */
+        min-width: 70px;
+        /* Maintain tap target */
+    }
+}
+
+/* Table row interaction */
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+    /* Hover highlight */
+}

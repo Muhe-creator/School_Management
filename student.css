@@ -1,0 +1,372 @@
+/* ------------- Base Layout ------------- */
+/* Main page container styling */
+body {
+    font-family: Arial, sans-serif;
+    /* System font stack with fallback */
+    max-width: 1200px;
+    /* Maximum content width for desktop */
+    margin: 0 auto;
+    /* Horizontal centering */
+    padding: 20px 80px;
+    /* Internal page spacing */
+    background-color: #ffffff;
+    /* Pure white background */
+}
+
+/* Heading hierarchy styling */
+h1,
+h2,
+h3 {
+    text-align: center;
+    /* Central alignment */
+    margin-bottom: 20px;
+    /* Consistent bottom spacing */
+}
+
+/* ------------- Home Button ------------- */
+/* Fixed position navigation button */
+.home-button {
+    position: absolute;
+    /* Absolute positioning */
+    top: 20px;
+    /* Vertical placement */
+    right: 20px;
+    /* Horizontal placement */
+    padding: 12px 24px;
+    /* Clickable area size */
+    margin-right: 60px;
+    /* Right side spacing */
+    background-color: #6c95fb;
+    /* Brand primary color */
+    color: white;
+    /* High contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    z-index: 1000;
+    /* Ensure top layer visibility */
+    font-size: 16px;
+    /* Readable text size */
+}
+
+/* Interactive hover state */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade for feedback */
+}
+
+/* Mobile text control */
+.mobile-text {
+    display: none;
+    /* Hidden on desktop */
+}
+
+/* Tablet/mobile responsive adjustments */
+@media (max-width: 768px) {
+    .home-button {
+        padding: 10px 0;
+        /* Compact vertical padding */
+        font-size: 14px;
+        /* Smaller text size */
+        min-width: 70px;
+        /* Minimum touch target */
+        text-align: center;
+        /* Centered text */
+        margin-right: 0;
+        /* Remove desktop spacing */
+        margin-top: 30px;
+        /* Adjusted positioning */
+    }
+
+    /* Mobile active state feedback */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Color consistency */
+        transform: scale(0.98);
+        /* Pressed effect */
+    }
+
+    /* Text visibility control */
+    .desktop-text {
+        display: none;
+        /* Hide desktop version */
+    }
+
+    .mobile-text {
+        display: block;
+        /* Show mobile version */
+        font-size: 14px;
+        /* Mobile-optimized size */
+        color: #fff;
+        /* Maintain contrast */
+    }
+}
+
+/* Ultra-small device optimization */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Minimum readable size */
+        border-radius: 4px;
+        /* Subtle rounding */
+        min-width: 70px;
+        /* Maintain touch target */
+    }
+}
+
+/* ------------- Tables ------------- */
+/* Table container styling */
+table {
+    width: 100%;
+    /* Full-width tables */
+    border-collapse: collapse;
+    /* Unified borders */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Cell formatting */
+th,
+td {
+    border: 1px solid #ddd;
+    /* Light gray borders */
+    padding: 10px 12px;
+    /* Comfortable cell spacing */
+    text-align: left;
+    /* Left-aligned content */
+}
+
+/* Header styling */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Header background color */
+}
+
+/* Row hover effect */
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+    /* Subtle hover indication */
+}
+
+/* ------------- Buttons ------------- */
+/* Base button styling */
+button,
+.btn-secondary,
+.btn-add,
+.btn-cancel {
+    padding: 8px 16px;
+    /* Consistent sizing */
+    font-size: 14px;
+    /* Readable text */
+    border-radius: 4px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Proper layout */
+    cursor: pointer;
+    /* Interaction indicator */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Primary action buttons */
+button,
+.btn-secondary,
+.btn-add {
+    background-color: rgb(67, 122, 250);
+    /* Brand blue */
+    color: white;
+    /* Contrast text */
+    border: none;
+    /* Modern flat design */
+}
+
+/* Hover state for primary actions */
+button:hover,
+.btn-secondary:hover,
+.btn-add:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker shade */
+}
+
+/* Danger action button */
+.btn-cancel {
+    background-color: #dc3545;
+    /* Alert red */
+    color: white;
+    /* Contrast text */
+    border: none;
+    /* Flat design */
+}
+
+/* Danger hover state */
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker red */
+}
+
+/* ------------- Forms ------------- */
+/* Form control styling */
+input,
+select,
+textarea {
+    padding: 8px;
+    /* Comfortable height */
+    width: 300px;
+    /* Fixed width */
+    max-width: 100%;
+    /* Responsive limitation */
+    margin: 8px 0;
+    /* Vertical spacing */
+    box-sizing: border-box;
+    /* Consistent sizing */
+}
+
+/* Date input customization */
+input[type="date"] {
+    padding: 7px 10px;
+    /* Platform-specific adjustment */
+}
+
+/* Label formatting */
+label {
+    display: block;
+    /* Full-width labels */
+    margin-top: 10px;
+    /* Spacing above labels */
+    margin-bottom: 5px;
+    /* Spacing below labels */
+}
+
+/* ------------- Layout Sections ------------- */
+/* Main container styling */
+.container {
+    padding: 20px;
+    /* Internal spacing */
+}
+
+/* Form section container */
+.form-section {
+    margin: 40px 0;
+    /* Vertical spacing */
+    padding: 20px;
+    /* Internal padding */
+    border: 1px solid #ddd;
+    /* Containment border */
+    background-color: #f9f9f9;
+    /* Light background */
+}
+
+/* Student list container */
+.student-list-section {
+    margin: 30px 0;
+    /* Vertical spacing */
+    padding: 20px;
+    /* Internal padding */
+    background-color: #f8f9fa;
+    /* Off-white background */
+    border-radius: 8px;
+    /* Softened edges */
+}
+
+/* Form row spacing */
+.form-row {
+    margin: 15px 0;
+    /* Vertical separation */
+}
+
+/* ------------- Alerts ------------- */
+/* Success message styling */
+.success {
+    color: green;
+    /* Positive color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    /* Alert color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Informational notice styling */
+.notice {
+    color: #6c757d;
+    /* Gray text */
+    padding: 10px;
+    /* Internal spacing */
+    border: 1px solid #ddd;
+    /* Containment border */
+    margin-top: 15px;
+    /* Top spacing */
+    background-color: #f5f5f5;
+    /* Light background */
+}
+
+/* ------------- Misc ------------- */
+/* Navigation container */
+.nav {
+    text-align: center;
+    /* Centered navigation */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+    font-size: 18px;
+    /* Larger text size */
+}
+
+/* Interactive link styling */
+.link {
+    color: rgb(67, 88, 250);
+    /* Brand blue */
+    transition: color 0.3s ease;
+    /* Smooth transition */
+}
+
+.link:hover {
+    color: rgb(30, 60, 220);
+    /* Darker hover state */
+}
+
+/* Progress bar container */
+.progress-bar {
+    background: #eee;
+    /* Neutral background */
+    height: 20px;
+    /* Fixed height */
+    border-radius: 10px;
+    /* Full rounding */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Progress indicator */
+.progress-bar div {
+    background: rgb(67, 122, 250);
+    /* Dynamic color */
+    height: 100%;
+    /* Full height */
+    border-radius: 10px;
+    /* Match container */
+    width: 0;
+    /* Initial state */
+}
+
+/* ------------- Chart Container ------------- */
+/* Canvas element styling */
+canvas {
+    background-color: #fff;
+    /* Clean background */
+    border: 1px solid #ddd;
+    /* Containment border */
+    padding: 10px;
+    /* Internal spacing */
+    border-radius: 6px;
+    /* Softened edges */
+}

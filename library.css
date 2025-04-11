@@ -1,0 +1,336 @@
+body {
+    font-family: Arial;
+    /* Use system font for better readability */
+    max-width: 1200px;
+    /* Restrict content width for large screens */
+    margin: 0 auto;
+    /* Center-align content horizontally */
+    padding: 20px 80px;
+    /* Add breathing space around content */
+}
+
+/* Floating action button styling */
+.home-button {
+    position: absolute;
+    /* Remove from document flow */
+    top: 20px;
+    /* Position from top edge */
+    right: 20px;
+    /* Position from right edge */
+    padding: 12px 24px;
+    /* Comfortable click area */
+    margin-right: 60px;
+    /* Additional right spacing */
+    background-color: #6c95fb;
+    /* Primary brand color */
+    color: white;
+    /* High contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Soften edges */
+    z-index: 1000;
+    /* Ensure top layer visibility */
+    font-size: 16px;
+    /* Readable text size */
+}
+
+/* Interactive hover state */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade for visual feedback */
+}
+
+/* Mobile-specific text container */
+.mobile-text {
+    display: none;
+    /* Hidden on desktop views */
+}
+
+/* Tablet/mobile responsive adjustments */
+@media (max-width: 768px) {
+    .home-button {
+        padding: 10px 0;
+        /* Vertical padding reduction */
+        font-size: 14px;
+        /* Smaller text size */
+        min-width: 70px;
+        /* Minimum touch target size */
+        text-align: center;
+        /* Centered button text */
+        margin-right: 0;
+        /* Remove desktop spacing */
+        margin-top: 30px;
+        /* Top positioning adjustment */
+    }
+
+    /* Mobile active state feedback */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Maintain color consistency */
+        transform: scale(0.98);
+        /* Pressed effect animation */
+    }
+
+    /* Hide desktop-specific content */
+    .desktop-text {
+        display: none;
+        /* Remove desktop elements */
+    }
+
+    /* Mobile-optimized text display */
+    .mobile-text {
+        display: block;
+        /* Show mobile content */
+        font-size: 14px;
+        /* Optimal reading size */
+        color: #fff;
+        /* Maintain contrast ratio */
+    }
+}
+
+/* Ultra-compact mobile optimization */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Minimum readable size */
+        border-radius: 4px;
+        /* Subtle rounding */
+        min-width: 70px;
+        /* Maintain touch target */
+    }
+}
+
+/* Primary heading styling */
+h1 {
+    text-align: center;
+    /* Center alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Table layout configuration */
+table {
+    width: 100%;
+    /* Full container width */
+    border-collapse: collapse;
+    /* Unified borders */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Table cell formatting */
+th,
+td {
+    border: 1px solid #ddd;
+    /* Subtle border color */
+    padding: 8px;
+    /* Cell padding */
+    text-align: left;
+    /* Content alignment */
+}
+
+/* Table header differentiation */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Header background color */
+}
+
+/* Form container styling */
+.form-section {
+    margin: 40px;
+    /* Outer spacing */
+    padding: 20px;
+    /* Inner padding */
+    border: 1px solid #ddd;
+    /* Visual containment */
+    background-color: #fff;
+    /* Clean white background */
+}
+
+/* Secondary heading styles */
+h2,
+h5 {
+    text-align: start;
+    /* Left alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Status message styling */
+.success {
+    color: green;
+    /* Positive feedback color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+.error {
+    color: red;
+    /* Error indication color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Form row layout */
+.form-row {
+    margin: 15px;
+    /* Consistent spacing */
+}
+
+/* Label formatting */
+label {
+    display: block;
+    /* Full-width labels */
+    margin-bottom: 5px;
+    /* Spacing below labels */
+}
+
+/* Input field styling */
+input,
+select {
+    padding: 8px;
+    /* Comfortable height */
+    width: 80%;
+    /* Responsive width */
+    max-width: 400px;
+    /* Maximum input size */
+    border: 1px solid #ddd;
+    /* Subtle border */
+    border-radius: 4px;
+    /* Rounded corners */
+    margin-bottom: 5px;
+    /* Bottom spacing */
+}
+
+/* Search button positioning */
+.search_button {
+    margin-left: 10px;
+    /* Separation from inputs */
+}
+
+/* Primary action button */
+button {
+    padding: 8px;
+    /* Balanced sizing */
+    background-color: rgb(67, 122, 250);
+    /* Brand color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Modern flat design */
+    border-radius: 4px;
+    /* Consistent rounding */
+    display: inline-block;
+    /* Proper sizing */
+    font-size: 14px;
+    /* Readable text */
+    cursor: pointer;
+    /* Interaction indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Button hover state */
+button:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker shade */
+}
+
+/* Danger action button */
+.btn-cancel {
+    margin-left: 8px;
+    /* Separation from primary */
+    padding: 8px;
+    /* Matching size */
+    background-color: #dc3545;
+    /* Alert color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Flat design */
+    border-radius: 4px;
+    /* Consistent shape */
+    display: inline-block;
+    /* Proper layout */
+    font-size: 14px;
+    /* Readable size */
+    cursor: pointer;
+    /* Interaction cue */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Danger button hover */
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker shade */
+}
+
+/* Main container layout */
+.container {
+    display: block;
+    /* Default display mode */
+}
+
+/* Loan section spacing */
+.loan-section {
+    margin-top: 40px;
+    /* Top separation */
+}
+
+/* History section spacing */
+.history-section {
+    margin-top: 40px;
+    /* Top separation */
+}
+
+/* History title styling */
+.history-title {
+    font-size: 1.5em;
+    /* Relative sizing */
+    margin: 30px 0 15px;
+    /* Vertical spacing */
+    border-bottom: 2px;
+    /* Underline preparation */
+    padding-bottom: 5px;
+    /* Space for underline */
+}
+
+/* Search/add containers */
+.search-section,
+.add-book {
+    margin: 30px 0;
+    /* Vertical spacing */
+    padding: 20px;
+    /* Internal padding */
+    background-color: #f8f9fa;
+    /* Light background */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle depth */
+}
+
+/* Results section spacing */
+.search-results {
+    margin-top: 20px;
+    /* Separation from controls */
+}
+
+/* Add button positioning */
+.add-button {
+    margin-left: 20px;
+    /* Right side spacing */
+}
+
+/* Table row hover effect */
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,301 @@
+body {
+    font-family: Arial;
+    /* Set default font for the page */
+    max-width: 1200px;
+    /* Restrict content width for large screens */
+    margin: 0 auto;
+    /* Center-align the content horizontally */
+    padding: 20px 80px;
+    /* Add vertical and horizontal padding */
+}
+
+/* Fixed-position navigation button styling */
+.home-button {
+    position: absolute;
+    /* Remove from normal document flow */
+    top: 20px;
+    /* Position from top edge */
+    right: 20px;
+    /* Position from right edge */
+    padding: 12px 24px;
+    /* Inner spacing */
+    margin-right: 60px;
+    /* Additional right offset */
+    background-color: #6c95fb;
+    /* Primary button color */
+    color: white;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    z-index: 1000;
+    /* Ensure button stays on top */
+    font-size: 16px;
+    /* Base text size */
+}
+
+/* Hover state for interactive feedback */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade on hover */
+}
+
+/* Mobile-specific text (hidden by default) */
+.mobile-text {
+    display: none;
+    /* Initially hidden for desktop view */
+}
+
+/* Responsive adjustments for tablet/mobile screens */
+@media (max-width: 768px) {
+    .home-button {
+        /* Compact styling for mobile */
+        padding: 10px 0;
+        /* Reduced vertical padding */
+        font-size: 14px;
+        /* Smaller text size */
+        min-width: 70px;
+        /* Minimum clickable area */
+        text-align: center;
+        /* Center button text */
+        margin-right: 0;
+        /* Remove desktop margin */
+        margin-top: 30px;
+        /* Add top spacing */
+    }
+
+    /* Active state for touch interaction */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Maintain hover color */
+        transform: scale(0.98);
+        /* Slight press effect */
+    }
+
+    /* Hide desktop-specific elements */
+    .desktop-text {
+        display: none;
+    }
+
+    /* Show mobile-optimized text elements */
+    .mobile-text {
+        display: block;
+        /* Reveal mobile content */
+        font-size: 14px;
+        /* Appropriate reading size */
+        color: #fff;
+        /* Maintain contrast */
+    }
+}
+
+/* Extra small screen optimizations */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Minimal readable size */
+        border-radius: 4px;
+        /* Slightly rounded */
+        min-width: 70px;
+        /* Maintain tap target size */
+    }
+}
+
+/* Table structure and basic styling */
+table {
+    width: 100%;
+    /* Full container width */
+    border-collapse: collapse;
+    /* Unified borders */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Cell styling for data presentation */
+th,
+td {
+    border: 1px solid #ddd;
+    /* Light gray borders */
+    padding: 8px;
+    /* Cell inner spacing */
+    text-align: left;
+    /* Left-align content */
+}
+
+/* Header cell differentiation */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Light blue background */
+}
+
+/* Form container styling */
+.form-section {
+    margin: 40px 0;
+    /* Section spacing */
+    padding: 20px;
+    /* Inner padding */
+    border: 1px solid #ddd;
+    /* Subtle border */
+}
+
+/* Page heading presentation */
+h1 {
+    text-align: center;
+    /* Center alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Status message styling */
+.success {
+    color: green;
+    /* Positive feedback color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+.error {
+    color: red;
+    /* Error indication color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Form row layout structure */
+.form-row {
+    margin: 15px 0;
+    /* Vertical separation */
+}
+
+/* Label formatting */
+label {
+    display: block;
+    /* Full-width labels */
+    margin-bottom: 5px;
+    /* Space below labels */
+}
+
+/* Input field styling */
+input,
+select {
+    padding: 8px;
+    /* Comfortable input height */
+    width: 300px;
+    /* Fixed input width */
+}
+
+/* Primary button styling */
+button {
+    padding: 8px 16px;
+    /* Balanced button size */
+    background-color: rgb(67, 122, 250);
+    /* Brand blue color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Modern flat design */
+    border-radius: 4px;
+    /* Consistent rounding */
+    display: inline-block;
+    /* Proper button sizing */
+    font-size: 14px;
+    /* Readable text size */
+    cursor: pointer;
+    /* Interactive indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth color change */
+}
+
+/* Hover state for interaction feedback */
+button:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker blue on hover */
+}
+
+/* Search button positioning */
+.search_button {
+    margin-left: 10px;
+    /* Separation from inputs */
+}
+
+/* Danger action button styling */
+.btn-cancel {
+    margin-left: 10px;
+    /* Separation from other buttons */
+    padding: 8px 16px;
+    /* Match primary button size */
+    background-color: #dc3545;
+    /* Danger red color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Flat design */
+    border-radius: 4px;
+    /* Consistent rounding */
+    display: inline-block;
+    /* Proper sizing */
+    font-size: 14px;
+    /* Readable text */
+    cursor: pointer;
+    /* Interactive indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Hover state for danger button */
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+/* Mobile table layout transformation */
+@media (max-width: 768px) {
+
+    /* Convert table to block layout */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+        /* Stack elements vertically */
+    }
+
+    /* Row spacing for separation */
+    tr {
+        margin-bottom: 20px;
+        /* Vertical gap between rows */
+    }
+
+    /* Header cell alignment adjustment */
+    th {
+        text-align: right;
+        /* Right-align labels */
+        padding-right: 15px;
+        /* Spacing before data */
+    }
+
+    /* Data cell formatting */
+    td {
+        text-align: left;
+        /* Left-align content */
+        padding-left: 15px;
+        /* Indentation from label */
+        border: none;
+        /* Remove default borders */
+        border-bottom: 1px solid #ddd;
+        /* Bottom separator */
+    }
+}
+
+/* Table row hover effect */
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}

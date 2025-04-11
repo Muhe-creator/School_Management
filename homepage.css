@@ -1,0 +1,125 @@
+/* Base page styling for consistent layout and readability */
+body {
+    font-family: Arial, sans-serif;
+    /* System font stack with fallback */
+    margin: 0;
+    /* Remove default browser margins */
+    padding: 0;
+    /* Remove default browser padding */
+    line-height: 1.6;
+    /* Enhanced text readability */
+    color: #000000;
+    /* Primary text color */
+}
+
+/* Header section styling */
+header {
+    background: #7687d8;
+    /* Brand primary color */
+    color: #fff;
+    /* Contrasting text color */
+    padding: 10px 0;
+    /* Vertical padding */
+}
+
+/* Header title formatting */
+header h1 {
+    margin: 0;
+    /* Remove default heading margin */
+}
+
+/* Navigation list container */
+nav ul {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    /* Reset default margin */
+    padding-right: 20px;
+    /* Right alignment padding */
+}
+
+/* Navigation item layout */
+nav ul li {
+    display: inline;
+    /* Horizontal menu layout */
+    margin-right: 20px;
+    /* Space between menu items */
+}
+
+/* Navigation link styling */
+nav ul li a {
+    color: #fff;
+    /* Maintain contrast */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+/* Hero section with background image */
+.welcome {
+    background: url('school.jpg') no-repeat center center/cover;
+    /* Full-bleed background image */
+    color: #050505;
+    /* Dark text for contrast */
+    padding: 200px 0;
+    /* Vertical spacing for content */
+    text-align: center;
+    /* Center-align content */
+}
+
+/* Hero heading styling */
+.welcome h2 {
+    font-size: 2.5em;
+    /* Prominent heading size */
+    margin-bottom: 10px;
+    /* Spacing below heading */
+}
+
+/* Hero text formatting */
+.welcome p {
+    font-size: 1.2em;
+    /* Enhanced readability size */
+    margin-bottom: 20px;
+    /* Spacing between paragraphs */
+}
+
+/* Call-to-action button styling */
+.welcome .btn {
+    background: #7687d8;
+    /* Brand color consistency */
+    color: #fff;
+    /* Contrasting text */
+    padding: 10px 20px;
+    /* Clickable area size */
+    margin-top: 20px;
+    /* Separation from text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Modern rounded corners */
+}
+
+/* Image container styling */
+.about img {
+    height: 220px !important;
+    /* Fixed image height */
+    object-fit: cover;
+    /* Prevent image distortion */
+}
+
+/* Footer section styling */
+footer {
+    background: #272626;
+    /* Dark background */
+    color: #fff;
+    /* Light text */
+    text-align: center;
+    /* Center content */
+    padding: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Footer text formatting */
+footer p {
+    margin: 0;
+    /* Remove default paragraph spacing */
+}

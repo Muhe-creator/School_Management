@@ -1,0 +1,280 @@
+/* Main page container settings */
+body {
+    font-family: Arial;
+    /* System font for better readability */
+    max-width: 1200px;
+    /* Maximum content width for desktop */
+    margin: 0 auto;
+    /* Horizontal centering */
+    padding: 20px 80px;
+    /* Internal page spacing */
+}
+
+/* Fixed position navigation button */
+.home-button {
+    position: absolute;
+    /* Remove from document flow */
+    top: 20px;
+    /* Vertical positioning */
+    right: 20px;
+    /* Horizontal positioning */
+    padding: 12px 24px;
+    /* Clickable area size */
+    margin-right: 60px;
+    /* Additional right spacing */
+    background-color: #6c95fb;
+    /* Primary brand color */
+    color: white;
+    /* High contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    z-index: 1000;
+    /* Ensure top layer visibility */
+    font-size: 16px;
+    /* Readable text size */
+}
+
+/* Interactive hover state */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade for visual feedback */
+}
+
+/* Mobile text container (hidden by default) */
+.mobile-text {
+    display: none;
+    /* Desktop-first approach */
+}
+
+/* Tablet/mobile responsive breakpoint */
+@media (max-width: 768px) {
+    .home-button {
+        padding: 10px 0;
+        /* Vertical padding reduction */
+        font-size: 14px;
+        /* Smaller text size */
+        min-width: 70px;
+        /* Minimum touch target size */
+        text-align: center;
+        /* Centered button text */
+        margin-right: 0;
+        /* Remove desktop spacing */
+        margin-top: 30px;
+        /* Top spacing adjustment */
+    }
+
+    /* Mobile active state feedback */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Color consistency */
+        transform: scale(0.98);
+        /* Pressed animation effect */
+    }
+
+    /* Hide desktop-specific elements */
+    .desktop-text {
+        display: none;
+        /* Mobile optimization */
+    }
+
+    /* Mobile-optimized text display */
+    .mobile-text {
+        display: block;
+        /* Reveal mobile content */
+        font-size: 14px;
+        /* Optimal reading size */
+        color: #fff;
+        /* Maintain contrast */
+    }
+}
+
+/* Ultra-small device optimization */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Minimum readable size */
+        border-radius: 4px;
+        /* Subtle rounding */
+        min-width: 70px;
+        /* Maintain touch target */
+    }
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    /* Center alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Navigation container styling */
+.nav {
+    text-align: center;
+    /* Centered navigation */
+    margin-bottom: 20px;
+    /* Bottom margin */
+    font-size: 18px;
+    /* Increased text size */
+}
+
+/* Interactive navigation links */
+.nav-link {
+    color: rgb(67, 88, 250);
+    /* Brand accent color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Form container styling */
+.form-section {
+    background-color: #fff;
+    /* Clean white background */
+    padding: 30px;
+    /* Internal spacing */
+    margin: 40px 0;
+    /* Vertical separation */
+    border-radius: 10px;
+    /* Soften edges */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    /* Subtle depth effect */
+
+}
+
+/* Table cell styling */
+th,
+td {
+    border: 1px solid #ddd;
+    /* Subtle border color */
+    padding: 8px;
+    /* Cell padding */
+    text-align: left;
+    /* Content alignment */
+}
+
+/* Table header differentiation */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Header background color */
+}
+
+/* Secondary heading styles */
+h2,
+h5 {
+    text-align: start;
+    /* Left alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Status message styling */
+.success {
+    color: green;
+    /* Positive feedback color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+.error {
+    color: red;
+    /* Error indication color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Form row layout */
+.form-row {
+    margin: 15px 0;
+    /* Vertical spacing */
+}
+
+/* Label formatting */
+label {
+    display: block;
+    /* Full-width labels */
+    margin-bottom: 5px;
+    /* Spacing below labels */
+}
+
+/* Input field styling */
+input,
+select {
+    padding: 8px;
+    /* Comfortable height */
+    width: 80%;
+    /* Responsive width */
+    max-width: 400px;
+    /* Maximum input size */
+}
+
+/* Search button positioning */
+.search_button {
+    margin-left: 10px;
+    /* Separation from inputs */
+}
+
+/* Primary action button */
+button {
+    padding: 8px 16px;
+    /* Balanced sizing */
+    background-color: rgb(67, 122, 250);
+    /* Brand color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Modern flat design */
+    border-radius: 4px;
+    /* Consistent rounding */
+    display: inline-block;
+    /* Proper sizing */
+    font-size: 14px;
+    /* Readable text */
+    cursor: pointer;
+    /* Interaction indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Button hover state */
+button:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker shade */
+}
+
+/* Danger action button */
+.btn-cancel {
+    margin-left: 10px;
+    /* Separation from primary */
+    padding: 8px 16px;
+    /* Matching size */
+    background-color: #dc3545;
+    /* Alert color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Flat design */
+    border-radius: 4px;
+    /* Consistent shape */
+    display: inline-block;
+    /* Proper layout */
+    font-size: 14px;
+    /* Readable size */
+    cursor: pointer;
+    /* Interaction cue */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Danger button hover state */
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker red shade */
+}

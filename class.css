@@ -1,0 +1,325 @@
+body {
+    font-family: Arial;
+    /* Default system font for readability */
+    max-width: 1200px;
+    /* Maximum content width for large screens */
+    margin: 0 auto;
+    /* Horizontal centering */
+    padding: 20px 80px;
+    /* Internal spacing */
+}
+
+/* Primary navigation button styling */
+.home-button {
+    position: absolute;
+    /* Fixed positioning */
+    top: 20px;
+    /* Vertical positioning */
+    right: 20px;
+    /* Horizontal positioning */
+    padding: 12px 24px;
+    /* Clickable area sizing */
+    margin-right: 60px;
+    /* Right side spacing */
+    background-color: #6c95fb;
+    /* Brand primary color */
+    color: white;
+    /* High contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Modern rounded corners */
+    z-index: 1000;
+    /* Ensure top layer visibility */
+    font-size: 16px;
+    /* Readable text size */
+}
+
+/* Interactive hover state */
+.home-button:hover {
+    background-color: #4e74d3;
+    /* Darker shade for visual feedback */
+}
+
+/* Mobile-specific text container */
+.mobile-text {
+    display: none;
+    /* Hidden on desktop views */
+}
+
+/* Tablet/mobile responsive breakpoint */
+@media (max-width: 768px) {
+    .home-button {
+        /* Mobile-optimized button layout */
+        padding: 10px 0;
+        /* Vertical padding reduction */
+        font-size: 14px;
+        /* Smaller text size */
+        min-width: 70px;
+        /* Minimum touch target size */
+        text-align: center;
+        /* Centered button text */
+        margin-right: 0;
+        /* Remove desktop margin */
+        margin-top: 30px;
+        /* Top spacing adjustment */
+    }
+
+    /* Active state for touch interaction */
+    .home-button:active {
+        background-color: #4e74d3;
+        /* Consistent color scheme */
+        transform: scale(0.98);
+        /* Tactile feedback effect */
+    }
+
+    /* Desktop text hiding */
+    .desktop-text {
+        display: none;
+        /* Remove desktop content */
+    }
+
+    /* Mobile text display */
+    .mobile-text {
+        display: block;
+        /* Show mobile content */
+        font-size: 14px;
+        /* Optimized reading size */
+        color: #fff;
+        /* Maintain contrast ratio */
+    }
+}
+
+/* Small mobile device optimization */
+@media (max-width: 390px) {
+    .home-button {
+        padding: 8px 12px;
+        /* Compact padding */
+        font-size: 12px;
+        /* Minimum readable size */
+        border-radius: 4px;
+        /* Subtle rounding */
+        min-width: 70px;
+        /* Maintain touch target */
+    }
+}
+
+/* Interactive link styling */
+.link {
+    color: rgb(67, 88, 250);
+    /* Brand accent color */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Progress bar container */
+.progress-bar {
+    background: #eee;
+    /* Neutral background */
+    height: 20px;
+    /* Fixed height */
+    border-radius: 10px;
+    /* Full rounding */
+}
+
+/* Progress indicator */
+.progress-bar div {
+    background: rgb(67, 122, 250);
+    /* Dynamic progress color */
+    height: 100%;
+    /* Parent height matching */
+    border-radius: 10px;
+    /* Inherit container shape */
+}
+
+/* Table structure styling */
+table {
+    width: 100%;
+    /* Full container width */
+    border-collapse: collapse;
+    /* Unified borders */
+    margin: 20px 0;
+    /* Vertical spacing */
+}
+
+/* Table cell formatting */
+th,
+td {
+    border: 1px solid #ddd;
+    /* Subtle border color */
+    padding: 8px;
+    /* Cell padding */
+    text-align: left;
+    /* Content alignment */
+}
+
+/* Table header differentiation */
+th {
+    background-color: rgb(173, 196, 249);
+    /* Header background */
+}
+
+/* Form container styling */
+.form-section {
+    margin: 40px 0;
+    /* Section spacing */
+    padding: 20px;
+    /* Internal padding */
+    border: 1px solid #ddd;
+    /* Visual containment */
+}
+
+/* Main heading presentation */
+h1 {
+    text-align: center;
+    /* Central alignment */
+    margin-bottom: 20px;
+    /* Bottom spacing */
+}
+
+/* Navigation container styling */
+.nav {
+    text-align: center;
+    /* Centered navigation */
+    margin-bottom: 20px;
+    /* Bottom margin */
+    font-size: 18px;
+    /* Increased text size */
+}
+
+/* Success message styling */
+.success {
+    color: green;
+    /* Positive color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    /* Alert color */
+    margin: 10px 0;
+    /* Vertical spacing */
+}
+
+/* Form row layout */
+.form-row {
+    margin: 15px 0;
+    /* Row separation */
+}
+
+/* Label formatting */
+label {
+    display: block;
+    /* Full-width labels */
+    margin-bottom: 5px;
+    /* Spacing below labels */
+}
+
+/* Student list container */
+.student-list-section {
+    margin: 30px 0;
+    /* Section spacing */
+    padding: 20px;
+    /* Internal padding */
+    background-color: #f8f9fa;
+    /* Light background */
+    border-radius: 8px;
+    /* Soft edges */
+}
+
+/* Results table spacing */
+.student-results table {
+    margin-top: 15px;
+    /* Table separation */
+}
+
+/* Informational notice styling */
+.notice {
+    color: #6c757d;
+    /* Subdued text color */
+    padding: 10px;
+    /* Internal spacing */
+    border: 1px solid #ddd;
+    /* Visual boundary */
+    margin-top: 15px;
+    /* Top spacing */
+}
+
+/* Input field styling */
+input,
+select {
+    padding: 8px;
+    /* Comfortable height */
+    width: 300px;
+    /* Fixed input width */
+}
+
+/* Primary action button */
+button {
+    padding: 8px 16px;
+    /* Balanced sizing */
+    background-color: rgb(67, 122, 250);
+    /* Brand color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Modern flat design */
+    border-radius: 4px;
+    /* Consistent rounding */
+    display: inline-block;
+    /* Proper sizing */
+    font-size: 14px;
+    /* Readable text */
+    cursor: pointer;
+    /* Interaction cue */
+    transition: background-color 0.2s ease;
+    /* Smooth transition */
+}
+
+/* Button hover state */
+button:hover {
+    background-color: rgb(50, 100, 200);
+    /* Darker shade */
+}
+
+/* Secondary action button */
+.btn-cancel {
+    margin-left: 20px;
+    /* Separation from primary */
+    padding: 8px 16px;
+    /* Matching size */
+    background-color: #dc3545;
+    /* Danger color */
+    color: white;
+    /* Contrast text */
+    text-decoration: none;
+    /* Remove underline */
+    border: none;
+    /* Flat design */
+    border-radius: 4px;
+    /* Consistent shape */
+    display: inline-block;
+    /* Proper layout */
+    font-size: 14px;
+    /* Readable size */
+    cursor: pointer;
+    /* Interaction indicator */
+    transition: background-color 0.2s ease;
+    /* Smooth change */
+}
+
+/* Danger button hover */
+.btn-cancel:hover {
+    background-color: #c82333;
+    /* Darker red */
+}
+
+/* Table row interaction */
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+    /* Hover highlight */
+}
